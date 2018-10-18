@@ -3,9 +3,8 @@
 
 <head>
   <title>方方的个人简历</title>
-  <script src="./iconfont/iconfont.js"></script>
-  <script src="./swiper/swiper.min.js"></script>
-  <link rel="stylesheet" href="./swiper/swiper.min.css">
+  <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
   <link rel="stylesheet" href="./main.css">
 </head>
 
@@ -89,7 +88,7 @@
         </a>
         <a href="#">
           <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-twitter"></use>
+            <use xlink:href="#icon-Ankerwebicon-"></use>
           </svg>
         </a>
         <a href="#">
@@ -165,15 +164,22 @@
   </section>
   <section data-x class="portfolio" id="siteWorks">
     <h2>作品集</h2>
-    <div id="mySlides"></div>
-    <div class ="swiper-container">
-      <div class="swiper-wrapper">
-        <img src="./img/1.jpg" class="swiper-slide">
-        <img src="./img/2.jpg" class="swiper-slide">
-        <img src="./img/3.jpg" class="swiper-slide">
-        
-      </div>
-      <div class="swiper-pagination"></div>
+
+    <!-- 这就是 view , 用户看得见的东西-->
+    <!-- Slider main container -->
+    <div id="mySlides">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <img src="./img/works/nav-page.jpg" class="swiper-slide">
+          <img src="./img/works/canvas.jpg" class="swiper-slide">
+          <img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
@@ -181,24 +187,24 @@
 
   </section>
   <section class="message">
-      <h2>留言</h2>
-      <ol id="messageList">
-      </ol>
-      <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
-        <label for="">姓名</label>
-        <input type="text" name="name">
-        <label for="">内容</label>
-        <input type="text" name="content">
-        <input type="submit" value="提交">
-      </form>
-    </section>
-
+    <h2>留言</h2>
+    <ol id="messageList">
+    </ol>
+    <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
+      <label for="">姓名</label>
+      <input type="text" name="name">
+      <input type="text" name="content">
+      <input type="submit" value="提交">
+    </form>
+  </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
-  <script src="./js/av-min.js"></script>
-  <script src="./js/auto-slide-up.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+  <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+  <!-- 模块化 -->
   <script src="./js/init-swiper.js"></script>
-  <script src="./js/smoothly-navigation.js"></script>
+  <script src="./js/auto-slide-up.js"></script>
   <script src="./js/sticky-topbar.js"></script>
+  <script src="./js/smoothly-navigation.js"></script>
   <script src="./js/message.js"></script>
 </body>
 
